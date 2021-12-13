@@ -65,8 +65,29 @@
 
 
     <script>
-        const sendMessage = (form) => {
-            alert("hi")
+        const postData = async (data = {}) => {
+            const url = 'https://mjcontact-form.glitch.me/send-mail'
+            const response = await fetch(url, {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            return response.json();
+        }
+
+        const sendMessage = async (form) => {
+            let formData = {
+                name: document.getElementsByName("name")[0].value,
+                mail: document.getElementsByName("mail")[0].value,
+                msg: document.getElementsByName("msg")[0].value
+            }
+
+            console.log(formData);
+            let res = await postData(formData)
+            console.log(res);
         }
     </script>
 </body>
