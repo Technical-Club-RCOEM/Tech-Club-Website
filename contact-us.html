@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+</head>
+
+<body>
+
+    <div class="contact-us">
+        <div class="map-add-link">
+
+            <p class="address">
+
+            </p>
+            <div class="social-links">
+
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <p>Get in touch</p>
+        <p>Contact us for queries, help, or any suggestions.</p>
+
+        <form onsubmit="sendMessage(this)" action="javascript:void(0)">
+
+            <div class="inp-holder">
+                <label for="name">Your name*</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class="inp-holder">
+                <label for="mail">Your Mail*</label>
+                <input type="email" name="mail">
+            </div>
+
+            <div class="inp-holder">
+                <label for="msg">Message*</label>
+                <input type="text" name="msg">
+            </div>
+
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const sendMessage = (form) => {
+            alert("hi")
+        }
+    </script>
+</body>
+
+</html>
