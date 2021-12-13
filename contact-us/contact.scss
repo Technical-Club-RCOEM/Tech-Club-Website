@@ -4,6 +4,14 @@
      box-sizing: border-box;
  }
 
+ $mobile: 770px;
+
+ @mixin mobile {
+     @media (max-width: #{$mobile}) {
+         @content;
+     }
+ }
+
  body {
      width: 100vw;
      height: 100vh;
@@ -19,6 +27,16 @@
      align-items: center;
      color: #fff;
      font-family: 'Montserrat', sans-serif;
+
+     @include mobile {
+         flex-direction: column-reverse;
+     }
+
+     iframe {
+         @include mobile {
+             display: none;
+         }
+     }
  }
 
  .map-add-link {
@@ -29,7 +47,19 @@
      flex-direction: column;
      justify-content: space-around;
      align-items: center;
+
+     @include mobile {
+         width: 100%;
+     }
+
+     .address {
+         @include mobile {
+             text-align: center;
+         }
+     }
  }
+
+
 
  .contact-container {
      height: 100%;
@@ -42,6 +72,10 @@
 
      h1 {
          margin: 10px;
+
+         span {
+             color: cyan;
+         }
      }
 
      h3 {
@@ -60,6 +94,7 @@
      border-radius: 4px;
      width: 100%;
      justify-content: flex-start;
+     margin: 10px;
 
      .inp-holder {
          width: 80%;
@@ -67,6 +102,10 @@
          flex-direction: column;
          justify-content: space-around;
          align-items: flex-start;
+
+         @include mobile {
+             width: 95%;
+         }
 
          label {
              margin-bottom: 6px;
