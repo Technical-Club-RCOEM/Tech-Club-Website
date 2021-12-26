@@ -9,13 +9,14 @@ $card-width:320px;
     background: $card-holder-bg;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     color: #fff;
     padding: 20px;
     margin: auto;
     left: 0;
     right: 0;
+    flex-wrap: wrap;
 
     a {
         text-decoration: none;
@@ -33,9 +34,9 @@ $card-width:320px;
     background-color: tomato;
     padding: 20px;
     overflow: hidden;
-    width: 0;
-    min-height: 150px;
-    flex-wrap: wrap;
+    width: $card-width;
+    height: 150px;
+    margin: 10px;
 
     img {
         width: 150px;

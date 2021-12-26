@@ -1,4 +1,4 @@
-@import "./page", "./card";
+@import "./card", "./page";
 
 * {
     margin: 0;
@@ -9,6 +9,5 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: none;
     background-color: #efefef;
 }
