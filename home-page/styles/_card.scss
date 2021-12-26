@@ -1,22 +1,47 @@
-$card-holder-bg:#262626;
+$card-holder-bg:#1b2124;
 $tri-size:80px;
 $card-click-size:72px;
 $card-click-bg:cyan;
 $card-width:320px;
 
-.card-holder {
+$mobile: 770px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+.clubs {
     width: 100%;
+    background: $card-holder-bg;
+    padding: 20px;
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-indent: 13%;
+    }
+}
+
+.card-holder {
+    width: 80%;
     background: $card-holder-bg;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     left: 0;
     right: 0;
     flex-wrap: wrap;
+
+    @include mobile {
+        width: 100%;
+    }
 
     a {
         text-decoration: none;
@@ -31,15 +56,18 @@ $card-width:320px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: tomato;
+    background: #02AAB0;
+    background: linear-gradient(to bottom, #00CDAC, #02AAB0);
+
     padding: 20px;
     overflow: hidden;
     width: $card-width;
     height: 150px;
     margin: 10px;
+    margin-bottom: 50px;
 
     img {
-        width: 150px;
+        width: 140px;
         position: absolute;
         transform-origin: 50% 50%;
         transform: translate(-200px, -20px);
@@ -70,7 +98,82 @@ $card-width:320px;
 
     &::after {
         border-width: $card-click-size;
-        border-bottom-color: $card-click-bg;
+        border-bottom-color: cyan;
+
     }
 
+    .bar {
+        position: absolute;
+        width: 20px;
+        height: 55px;
+        background-color: $card-holder-bg;
+        margin-left: 280px;
+        margin-top: -10px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: $card-holder-bg;
+            opacity: 1;
+            z-index: 2;
+            margin-left: 0;
+            margin-top: -40px;
+        }
+    }
+}
+
+$gif-circle-size:400px;
+$gif-circle-size-mob:300px;
+
+.gif-circle {
+    position: absolute;
+    width: $gif-circle-size;
+    height: $gif-circle-size;
+    background: #8A2387;
+    background: linear-gradient(60deg, #F27121, #E94057, #8A2387);
+    top: 8%;
+    right: 12%;
+    border-radius: 50%;
+    border: 18px solid rgba(63, 68, 70, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+    @include mobile {
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: $gif-circle-size-mob;
+        height: $gif-circle-size-mob;
+        top: 20px;
+        position: absolute;
+    }
+}
+
+lottie-player {
+    display: block;
+    position: absolute;
+    width: 270px;
+    visibility: hidden;
+}
+
+#Embedded-card {
+    img {
+        margin-top: -8px;
+    }
+}
+
+#code {
+    transform: scale(.8);
+}
+
+.trial {
+    width: 100px;
+    height: 100px;
+    background: cyan;
 }

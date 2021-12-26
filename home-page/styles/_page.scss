@@ -1,7 +1,53 @@
 .page {
-    height: 80vh;
-    width: 100vw;
-    background: hsla(248, 21%, 15%, 1);
+    height: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #262c2f;
+    color: #fff;
+    padding: 10px;
+    padding-left: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-    background: linear-gradient(45deg, hsla(248, 21%, 15%, 1) 27%, hsla(251, 85%, 76%, 1) 98%, hsla(250, 14%, 61%, 1) 100%, hsla(249, 10%, 49%, 1) 100%);
+    @include mobile {
+        height: 100%;
+        justify-content: flex-start;
+        padding-bottom: 100px;
+        padding-top: 320px;
+    }
+
+    h1 {
+        margin: 20px 0;
+        word-spacing: 4px;
+        font-size: 55px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    button {
+        outline: none;
+        padding: 10px 40px;
+        color: #fff;
+        border: none;
+        margin: 20px 0;
+        background: #8A2387;
+        background: linear-gradient(60deg, #F27121, #E94057, #8A2387);
+        text-transform: uppercase;
+        font-size: medium;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(.9);
+        }
+    }
+
 }
