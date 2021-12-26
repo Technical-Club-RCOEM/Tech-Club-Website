@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEC,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACzB,AAED,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,OAAO,CAC5B",
+    "sources": [
+        "home.scss",
+        "_page.scss",
+        "_card.scss"
+    ],
+    "names": [],
+    "file": "home.min.css"
+}
