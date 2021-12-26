@@ -1,11 +1,14 @@
- @import "./page", "./card";
+@import "./page", "./card";
 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- body {
-     background-color: #262626;
- }
+body {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: #efefef;
+}
