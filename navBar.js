@@ -13,7 +13,7 @@ let navData = {
     },
     {
         name: "Work",
-        link: "./team.html"
+        link: "./OurWork.html"
     },
     {
         name: "About",
