@@ -42,22 +42,6 @@
 
 <body>
 	<nav-bar selected="about"></nav-bar>
-	<!-- ------------------------------Menu Icon-------------------- -->
-	<div class="menuIcon">
-		<span class="icon icon-bars"></span>
-		<span class="icon icon-bars overlay"></span>
-	</div>
-
-
-	<div class="overlay-menu">
-		<ul id="menu">
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</div>
-
-	<!-- ---------------------------------------------------------------------------------------------------------- -->
 
 	<div class="stage">
 		<div class="wrapper">
@@ -240,6 +224,25 @@
 			letter-spacing: 2px;
 			font-size: 8px;
 			margin-bottom: 20px
+		}
+
+		@media screen and (max-width: 600px) {
+			.item .cover {
+				background-color: transparent;
+				opacity: 1;
+				transform: scale(1.1);
+			}
+
+			.name,
+			.title {
+				color: #fff;
+				padding: 2px;
+				background-color: grey;
+			}
+		}
+
+		html {
+			overflow-x: hidden;
 		}
 	</style>
 	<div class="ourteam">

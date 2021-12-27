@@ -916,8 +916,20 @@ body {
     .stage {
         transform: scale(.3);
     }
-    .section .bg-move{
-            position: static;
-        
+
+    .section .bg-move {
+        position: static;
+
+    }
+
+    .box {
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .name {
+        color: #000;
+        display: block;
     }
 }
