@@ -777,10 +777,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
     /* body {
 		  background: #8bfff4;
 		  
 		} */
+    .stage {
+        transform: scale(.1);
+    }
 
     .timeline ul li {
         margin-left: 20px;
@@ -929,4 +933,15 @@ figure img {
 /* -------------------------------------------------------------- */
 body {
     padding-bottom: 0;
+    overflow-x: hidden;
+}
+
+.stage {
+    transform: scale(.8);
+}
+
+@media screen and (max-width: 600px) {
+    .stage {
+        transform: scale(.3);
+    }
 }
