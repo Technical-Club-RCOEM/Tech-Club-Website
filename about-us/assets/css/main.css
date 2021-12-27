@@ -830,34 +830,6 @@ body {
 }
 
 /* ----------------------canvas--------------------------- */
-#canvas {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-}
-
-/* .Footer1 {
-		color: rgb(112, 219, 233);
-		position:relative;
-		font-size: 20vw;
-		line-height: 100vh;
-		margin: 0;
-		pointer-events: none;
-	  }  */
-.Canva {
-    min-height: 100vh;
-
-    /* background:#ff4000; */
-    background: url(../images/technicalwithsir.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
 /* ------------------------------------------------------------------------------- */
 /* body {
@@ -943,5 +915,12 @@ body {
 @media screen and (max-width: 600px) {
     .stage {
         transform: scale(.3);
+    }
+    .section .bg-move{
+            position: static;
+        
+    }
+    .col-md-4{
+        align-items: center;
     }
 }
