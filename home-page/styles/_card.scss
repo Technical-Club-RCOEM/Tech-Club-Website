@@ -98,6 +98,11 @@ $mobile: 770px;
         margin-top: -150px;
     }
 
+    &:hover:before {
+        border-bottom-color: #ff5f1f;
+
+    }
+
     &::after {
         border-width: $card-click-size;
         border-bottom-color: cyan;
