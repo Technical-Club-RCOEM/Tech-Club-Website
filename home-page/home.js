@@ -1,4 +1,8 @@
 window.onload = () => {
+
+    document.getElementsByClassName("pulse")[0].onclick = () => {
+        window.location = './clubs.html'
+    }
     let cards = document.getElementsByClassName("card")
 
     let gifs = document.getElementsByClassName("lottie-player")

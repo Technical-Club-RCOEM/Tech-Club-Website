@@ -17,7 +17,7 @@ let navData = {
     },
     {
         name: "About",
-        link: "./about-us.html"
+        link: "./about-index.html"
     },
     ],
     selectedColor: "#E94057"
