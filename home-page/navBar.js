@@ -5,7 +5,7 @@ let navData = {
     logoText: "Technical Club",
     navLinks: [{
         name: "Home",
-        link: "./index.html"
+        link: "./home.html"
     },
     {
         name: "Clubs",
@@ -17,7 +17,7 @@ let navData = {
     },
     {
         name: "About",
-        link: "./about-index.html"
+        link: "./aboutus.html"
     },
     ],
     selectedColor: "#E94057"

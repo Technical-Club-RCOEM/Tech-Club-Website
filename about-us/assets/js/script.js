@@ -1,7 +1,8 @@
 //background animation
+const timeDuration = 8;
 let tl = anime.timeline({
   easing: 'easeOutExpo',
-  duration: 850
+  duration: 850 - timeDuration
 });
 
 tl.add({
@@ -33,13 +34,13 @@ tl.add({
 tl.add({
   targets: '.text',
   top: '49%',
-  duration: 4500,
+  duration: 4500 - timeDuration,
   opacity: 1
 }, '-=500')
 tl.add({
   targets: '.text2',
   top: '60%',
-  duration: 1500,
+  duration: 1500 - timeDuration,
   opacity: 1
 }, '-=700')
 
@@ -57,12 +58,12 @@ anime.timeline()
     opacity: [0, 1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 1350,
+    duration: 1350 - timeDuration,
     delay: function (el, i) {
       return 70 * i;
     }
   }, 1500);
 
 setTimeout(function () {
-  window.location.href = "aboutus.html";
+  window.location.href = "/home.html";
 }, 7000);

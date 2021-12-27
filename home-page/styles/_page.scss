@@ -10,9 +10,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #e5e5f7;
+    background-color: #262626;
     opacity: 0.8;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#444cf755, #444cf7);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #262626 10px), repeating-linear-gradient(#f0f0f055, #f0f0f0);
 
     @include mobile {
         height: auto;
