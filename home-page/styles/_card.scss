@@ -15,7 +15,7 @@ $mobile: 770px;
 .clubs {
     width: 100%;
     background: $card-holder-bg;
-    padding: 20px;
+    padding: 16px;
 
     h1 {
         color: #fff;
@@ -38,6 +38,7 @@ $mobile: 770px;
     left: 0;
     right: 0;
     flex-wrap: wrap;
+    margin-top: -8px;
 
     @include mobile {
         width: 100%;
@@ -63,7 +64,9 @@ $mobile: 770px;
     overflow: hidden;
     width: $card-width;
     height: 150px;
-    margin: 10px;
+    margin-top: -14px;
+
+    transform: scale(.8);
 
     img {
         width: 140px;
@@ -128,7 +131,7 @@ $mobile: 770px;
     }
 }
 
-$gif-circle-size:350px;
+$gif-circle-size:344px;
 $gif-circle-size-mob:300px;
 
 .gif-circle {
@@ -137,10 +140,10 @@ $gif-circle-size-mob:300px;
     height: $gif-circle-size;
     background: #8A2387;
     background: linear-gradient(60deg, #F27121, #E94057, #8A2387);
-    top: 8%;
+    top: 7%;
     right: 12%;
     border-radius: 50%;
-    border: 18px solid rgba(63, 68, 70, 1);
+    border: 14px solid rgba(63, 68, 70, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
