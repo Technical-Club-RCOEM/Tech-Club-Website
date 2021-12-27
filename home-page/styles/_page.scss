@@ -12,10 +12,10 @@
     align-items: flex-start;
 
     @include mobile {
-        height: 100%;
+        height: auto;
         justify-content: flex-start;
-        padding-bottom: 100px;
-        padding-top: 320px;
+        padding-top: 400px;
+        padding-bottom: 50px;
     }
 
     h1 {
