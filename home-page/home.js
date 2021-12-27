@@ -1,7 +1,7 @@
 window.onload = () => {
     let cards = document.getElementsByClassName("card")
 
-    let gifs = document.getElementsByTagName("lottie-player")
+    let gifs = document.getElementsByClassName("lottie-player")
 
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("mouseenter", () => {

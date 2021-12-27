@@ -20,7 +20,7 @@ let navData = {
         link: "./team.html"
     },
     ],
-    selectedColor: "cyan"
+    selectedColor: "#E94057"
 }
 
 

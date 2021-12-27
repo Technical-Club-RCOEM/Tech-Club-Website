@@ -155,7 +155,8 @@ $gif-circle-size-mob:300px;
     }
 }
 
-lottie-player {
+lottie-player,
+#ishrae {
     display: block;
     position: absolute;
     width: 270px;
@@ -176,4 +177,10 @@ lottie-player {
     width: 100px;
     height: 100px;
     background: cyan;
+}
+
+#ishrae {
+    img {
+        width: 300px;
+    }
 }

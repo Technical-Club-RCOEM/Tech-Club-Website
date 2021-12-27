@@ -3,7 +3,7 @@ $dark: #262626;
 $nav-color: #262626;
 $text-color1: #fff;
 $text-color2: #fff;
-$hover-color:cyan;
+$hover-color:#E94057;
 $nav-h:55px;
 $mobile: 770px;
 
@@ -20,7 +20,6 @@ $mobile: 770px;
 }
 
 .container {
-
     height: $nav-h;
     width: 100%;
     background-color: $nav-color;
@@ -32,9 +31,10 @@ $mobile: 770px;
     top: 0;
     left: 0;
     transition-duration: 300ms;
-    z-index: 5;
+    z-index: 500;
     padding: 0 10px;
     font-family: 'Roboto', sans-serif;
+    color: $text-color1;
 
     @include mobile {
         justify-content: start;
