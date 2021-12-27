@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+class footerBar extends HTMLElement {
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    constructor() {
+        super()
+        this.attachShadow({ mode: 'open' })
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        const wrapper = document.createElement('div')
+        wrapper.setAttribute('class', 'contact-us-container')
 
-    <title>RCOEM Technical Club | Contact us</title>
-
-    <link rel="stylesheet" href="./contact-us/contact.min.css">
-</head>
-
-<body>
-
-    <div class="contact-us-container">
+        wrapper.innerHTML = `
         <div class="map-copyright">
             <iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1469.3490309934944!2d79.06121229675324!3d21.176554800983375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1a8970c08e9%3A0xfe4a9c97e7e671cb!2sShri%20Ramdeobaba%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1639044960358!5m2!1sen!2sin"
@@ -114,7 +104,6 @@
                 <button type="submit" name="submit">Submit</button>
             </form>
         </div>
-    </div>
 
 
     <script>
@@ -144,7 +133,16 @@
             console.log(res);
         }
     </script>
+        `
 
-</body>
+        const linkElem = document.createElement('link')
+        linkElem.setAttribute('rel', 'stylesheet')
+        linkElem.setAttribute('href', './contact-us/contact.min.css')
 
-</html>
+        this.shadowRoot.append(linkElem, wrapper)
+    }
+}
+
+// custom component navBar
+window.customElements.define('footer-bar', footerBar)
+
