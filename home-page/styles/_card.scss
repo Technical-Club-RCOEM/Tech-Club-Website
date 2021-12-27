@@ -64,7 +64,6 @@ $mobile: 770px;
     width: $card-width;
     height: 150px;
     margin: 10px;
-    margin-bottom: 50px;
 
     img {
         width: 140px;
@@ -125,7 +124,7 @@ $mobile: 770px;
     }
 }
 
-$gif-circle-size:400px;
+$gif-circle-size:350px;
 $gif-circle-size-mob:300px;
 
 .gif-circle {
@@ -156,7 +155,7 @@ $gif-circle-size-mob:300px;
 }
 
 lottie-player,
-#ishrae {
+.lottie-player {
     display: block;
     position: absolute;
     width: 270px;
@@ -179,8 +178,8 @@ lottie-player,
     background: cyan;
 }
 
-#ishrae {
+.lottie-player {
     img {
-        width: 300px;
+        width: 280px;
     }
 }

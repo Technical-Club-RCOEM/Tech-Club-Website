@@ -5,7 +5,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Manifest.json  -->
+        <link href="/manifest.json" rel="manifest">
+        <meta property="og:title" content="title">
+        <meta property="og:description" content="desc">
+        <meta property="og:image" content="./home-page/assets/tc-white.png">
+        <meta property="og:url" content="name.com">
+
+        <!-- Main Link Tags  -->
+        <link rel="icon" type="image/png" href="/home-page/assets/tc-white.png">
+
+        <!-- iOS  -->
+        <link href="./home-page/assets/tc-white.png" rel="apple-touch-icon" sizes="152x152">
+
+        <!-- Android  -->
+        <link href="./home-page/assets/tc-white.png" rel="icon" sizes="192x192">
+        <link href="./home-page/assets/tc-white.png" rel="icon" sizes="512x512">
+
         <title>Technical Club | Home page</title>
+
         <link rel="stylesheet" href="./home-page/styles/home.min.css">
         <link rel="stylesheet" href="./home-page/styles/nav.min.css">
         <script src="./navBar.js"></script>
@@ -63,8 +82,9 @@
                 </a></div>
         </div>
         <div class="gif-circle">
-            <lottie-player class="lottie-player" id="car" src="home-page/assets/lf30_editor_rctjxgwx.json"
-                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <div class="lottie-player" id="car">
+                <img src="./home-page/assets/icons/trident_car.gif" alt="">
+            </div>
 
             <lottie-player class="lottie-player" id="drone"
                 src="https://assets8.lottiefiles.com/private_files/lf30_k985zjll.json" background="transparent"
