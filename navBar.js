@@ -13,11 +13,11 @@ let navData = {
     },
     {
         name: "Work",
-        link: "./OurWork.html"
+        link: "./our-work.html"
     },
     {
         name: "About",
-        link: "./team.html"
+        link: "./about-us.html"
     },
     ],
     selectedColor: "#E94057"
