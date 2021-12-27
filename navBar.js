@@ -9,7 +9,7 @@ let navData = {
     },
     {
         name: "Clubs",
-        link: "./event.html"
+        link: "./clubs.html"
     },
     {
         name: "Work",
