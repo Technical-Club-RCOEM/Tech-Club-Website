@@ -19,6 +19,10 @@ let navData = {
         name: "About",
         link: "./aboutus.html"
     },
+    {
+        name: "Stats",
+        link: "./counter.html"
+    }
     ],
     selectedColor: "#E94057"
 }
