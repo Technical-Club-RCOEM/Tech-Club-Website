@@ -292,11 +292,13 @@ hr {
         font-size: 2rem ;
         top: 12%;
         left: -24%;
-        
+
     }
 
     hr {
-       z-index: 0;
+       /* z-index: 0; */
+       visibility: hidden;
+        opacity: 0;
     }
 
     .Div2 {
