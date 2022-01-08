@@ -21,7 +21,7 @@ tl.add({
 tl.add({
   targets: 'section .item',
   backgroundColor: '#FFFFFF',
-  delay: anime.stagger(50,{from: 'center'})
+  delay: anime.stagger(50, { from: 'center' })
 });
 tl.add({
   targets: 'section .item',
@@ -53,18 +53,18 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/([^.\s]|\w)/g, "<span c
 anime.timeline()
   .add({
     targets: '.effect1 .letter',
-    scale: [5,1],
-    opacity: [0,1],
+    scale: [5, 1],
+    opacity: [0, 1],
     translateZ: 0,
     easing: "easeOutExpo",
     duration: 1350,
-    delay: function(el, i) {
-      return 70*i;
-  }
-}, 1500);
+    delay: function (el, i) {
+      return 70 * i;
+    }
+  }, 1500);
 
-setTimeout(function(){
-  window.location.href="home.html";
+setTimeout(function () {
+  window.location.href = "./home.html";
 
 
 }, 7000);
