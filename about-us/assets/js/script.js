@@ -64,7 +64,7 @@ anime.timeline()
 }, 1500);
 
 setTimeout(function(){
-  window.location.href="aboutus.html";
+  window.location.href="home.html";
 
 
 }, 7000);
