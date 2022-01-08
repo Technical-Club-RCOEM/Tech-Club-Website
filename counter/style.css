@@ -298,6 +298,7 @@ hr {
     hr {
        /* z-index: 0; */
        visibility: hidden;
+        opacity: 0;
     }
 
     .Div2 {
