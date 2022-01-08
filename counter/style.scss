@@ -29,7 +29,7 @@ h1 {
     display: flex;
     align-items: center;
     text-align: right;
-    z-index: 10;
+
     color: var(--text-color);
 
 }
@@ -39,9 +39,9 @@ hr {
     position: absolute;
     width: 190px;
     height: 0px;
-    left: 540px;
+    left: 600px;
     top: 439px;
-    z-index: 10;
+
     border: 2px solid var(--text-color);
 
 }
@@ -278,88 +278,124 @@ hr {
     opacity: 0.75;
 }
 
+.complete{
+    font-weight: bold;
+}
+
 @media (max-width:620px) {
     .heading {
-        padding-top: 900px !important;
+        padding-top: 230px ;
     }
 
     h1 {
         display: block;
-        font-size: 5rem !important;
-        top: 160%;
-        left: 127%;
-
+        font-size: 2rem ;
+        top: 12%;
+        left: -44%;
+        
     }
 
     hr {
-        display: block;
-        font-size: 5rem !important;
-        top: 177%;
-        left: 135%;
+       z-index: 0;
     }
 
     .Div2 {
-        top: 148% !important;
-        left: 20% !important;
-        width: 80rem;
-        height: 29rem;
+        top: 37% ;
+        left: 5% ;
+        width: 21rem;
+        height: 7.6rem;
         border-radius: 50%;
-        border: 6px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
+        transform: rotate(30.41deg) !important;
 
     }
 
     .Div1 {
-        top: 150% !important;
-        left: 30% !important;
-        width: 80rem;
-        height: 29rem;
+        top: 37% ;
+        left: 7% ;
+        width: 21rem;
+        height: 7.6rem;
         border-radius: 50%;
-        border: 6px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
+        
     }
 
     #para1 {
-        top: 99%;
-        left: 280%;
+        top: 4%;
+        left: 75%;
+        font-size: 60px;
     }
 
     #para2 {
-        top: 177%;
-        left: 288% !important;
+        top: 30%;
+        left: 77% ;
+        font-size: 60px;
     }
 
     #para3 {
-        top: 143%;
-        left: 62% !important;
+        top: -11%;
+        left: 11% ;
+        font-size: 60px;
     }
 
     #para4 {
-        top: 109%;
-        left: 65%;
+        top: 7%;
+        left: 11%;
+        font-size: 60px;
     }
-
+    
     .circle {
-        padding: 35px;
-        font-size: 26px;
+        padding: 1px;
+        font-size: 7px;
         font-weight: bold;
         font-family: 'ITC Korinna';
     }
 
     .circle.circle1 {
-        top: 135% !important;
-        left: 233%;
+        top: 31% ;
+        left: 57%;
+        height: 60px;
+        width:60px;
     }
 
     .circle.circle2 {
-        top: 195% !important;
+        top: 48% ;
+        left: 60%;
+        height: 60px;
+        width:60px;
     }
 
     .circle.circle3 {
-        top: 199% !important;
-        left: 95%;
+        top: 49% !important;
+        left: 24%;
+        height: 60px;
+        width:60px;
     }
 
     .circle.circle4 {
-        top: 146% !important;
-        left: 74%;
+        top: 36% !important;
+        left: 18%;
+        height: 60px;
+        width:60px;
     }
+    @keyframes move1 {
+        0% {
+            transform: rotate(-36.41deg) translate(20px, -20px);
+        }
+    
+        100% {
+            transform: rotate(-46.41deg) translate(0, 0);
+        }
+    }
+    
+    @keyframes move2 {
+        0% {
+            transform: rotate(30deg) translate(20px, -20px);
+        }
+    
+        100% {
+            transform: rotate(30deg) translate(0px, 0px);
+        }
+    }
+
 }
