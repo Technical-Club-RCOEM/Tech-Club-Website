@@ -379,22 +379,27 @@ button:focus {
   font-size: medium;
   cursor: pointer;
   color: #fff;
+  animation: show 5s linear;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .nxt:active {
   transform: scale(.8);
 }
 
-.text {
-  font-size: 25px;
-}
+
 
 @media only screen and (min-width: 622px) {
   .nxt {
     display: none;
-  }
-
-  .text {
-    font-size: 20px;
   }
 }
