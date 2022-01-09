@@ -1,0 +1,201 @@
+$card-holder-bg:#1b2124;
+$tri-size:80px;
+$card-click-size:72px;
+$card-click-bg:cyan;
+$card-width:320px;
+
+$mobile: 770px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+.clubs {
+    width: 100%;
+    background: $card-holder-bg;
+    padding: 16px;
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-indent: 13%;
+    }
+}
+
+.card-holder {
+    width: 80%;
+    background: $card-holder-bg;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+    margin-top: -8px;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #02AAB0;
+    background: linear-gradient(to bottom, #00CDAC, #02AAB0);
+
+    padding: 20px;
+    overflow: hidden;
+    width: $card-width;
+    height: 150px;
+    margin-top: -14px;
+
+    transform: scale(.8);
+
+    img {
+        width: 140px;
+        position: absolute;
+        transform-origin: 50% 50%;
+        transform: translate(-200px, -20px);
+    }
+
+    marquee {
+        font-size: 60px;
+        font-weight: bolder;
+        opacity: 0.2;
+        text-transform: uppercase;
+        filter: blur(1px);
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border: $tri-size solid transparent;
+        border-bottom-color: $card-holder-bg;
+        transform: rotate(-45deg);
+        opacity: 1;
+        z-index: 2;
+        margin-right: $card-width;
+        margin-top: -150px;
+    }
+
+    &:hover:before {
+        border-bottom-color: #ff5f1f;
+
+    }
+
+    &::after {
+        border-width: $card-click-size;
+        border-bottom-color: cyan;
+
+        @include mobile {
+            border-width: 60px;
+            margin-right: 282px;
+        }
+    }
+
+    .bar {
+        position: absolute;
+        width: 20px;
+        height: 55px;
+        background-color: $card-holder-bg;
+        margin-left: 280px;
+        margin-top: -10px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: $card-holder-bg;
+            opacity: 1;
+            z-index: 2;
+            margin-left: 0;
+            margin-top: -40px;
+        }
+    }
+}
+
+$gif-circle-size:344px;
+$gif-circle-size-mob:300px;
+
+.gif-circle {
+    position: absolute;
+    width: $gif-circle-size;
+    height: $gif-circle-size;
+    background: #8A2387;
+    background: linear-gradient(60deg, #F27121, #E94057, #8A2387);
+    top: 7%;
+    right: 12%;
+    border-radius: 50%;
+    border: 14px solid rgba(63, 68, 70, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+    @include mobile {
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: $gif-circle-size-mob;
+        height: $gif-circle-size-mob;
+        top: 60px;
+        position: absolute;
+    }
+}
+
+lottie-player,
+.lottie-player {
+    display: block;
+    position: absolute;
+    width: 270px;
+    visibility: hidden;
+}
+
+#Embedded-card {
+    img {
+        margin-top: -8px;
+    }
+}
+
+#code {
+    transform: scale(.8);
+}
+
+.trial {
+    width: 100px;
+    height: 100px;
+    background: cyan;
+}
+
+.lottie-player {
+    img {
+        width: 280px;
+    }
+}
+
+#ishrae {
+    transform: scale(1.3) translateX(30px);
+}
