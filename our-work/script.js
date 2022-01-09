@@ -12,9 +12,11 @@ const appBgContainerEl = document.querySelector(".app__bg");
 const cardInfosContainerEl = document.querySelector(".info__wrapper");
 
 buttons.next.addEventListener("click", () => swapCards("right"));
+
 buttons.prev.addEventListener("click", () => swapCards("left"));
 
 document.getElementsByClassName("nxt")[0].addEventListener("click", () => swapCards("right"))
+
 
 function swapCards(direction) {
 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
@@ -78,6 +80,7 @@ function changeInfo(direction) {
 
 	gsap.timeline()
 		.to([buttons.prev, buttons.next], {
+
 			duration: 0.2,
 			opacity: 0.5,
 			pointerEvents: "none",
@@ -116,6 +119,7 @@ function changeInfo(direction) {
 			opacity: 1,
 			pointerEvents: "all",
 		});
+
 
 	function swapInfosClass() {
 		currentInfoEl.classList.remove("current--info");
@@ -191,6 +195,7 @@ function init() {
 		"--card-translateY-offset": "0%",
 	})
 		.to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+
 			delay: 0.5,
 			duration: 0.4,
 			stagger: 0.1,
@@ -245,6 +250,7 @@ const waitForImages = () => {
 							opacity: 0,
 							pointerEvents: "none",
 						})
+
 						.call(() => init());
 				}
 			}
