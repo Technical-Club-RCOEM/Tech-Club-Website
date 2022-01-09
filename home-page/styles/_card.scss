@@ -73,6 +73,10 @@ $mobile: 770px;
         position: absolute;
         transform-origin: 50% 50%;
         transform: translate(-200px, -20px);
+
+        @include mobile {
+            margin-left: -20px;
+        }
     }
 
     marquee {
@@ -96,6 +100,10 @@ $mobile: 770px;
         z-index: 2;
         margin-right: $card-width;
         margin-top: -150px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &:hover:before {
