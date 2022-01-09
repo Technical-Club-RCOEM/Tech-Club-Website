@@ -1,3 +1,3 @@
 # RCOEM Technical Club Website
 
-Site Link: https://rcoemtechnical.club
+Site Link: https://www.rcoemtechnical.club
