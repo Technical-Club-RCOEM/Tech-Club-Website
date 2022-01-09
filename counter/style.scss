@@ -13,6 +13,8 @@ body {
     background-color: var(--page-bg);
     z-index: 0;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -278,30 +280,35 @@ hr {
     opacity: 0.75;
 }
 
-.complete{
+.complete {
     font-weight: bold;
 }
 
 @media (max-width:620px) {
     .heading {
-        padding-top: 230px ;
+        padding-top: 230px;
     }
 
     h1 {
         display: block;
-        font-size: 2rem ;
+        font-size: 2rem;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        text-align: center;
         top: 12%;
-        left: -44%;
-        
     }
 
     hr {
-       z-index: 0;
+        /* z-index: 0; */
+        visibility: hidden;
+        opacity: 0;
     }
 
     .Div2 {
-        top: 37% ;
-        left: 5% ;
+        top: 37%;
+        left: 5%;
         width: 21rem;
         height: 7.6rem;
         border-radius: 50%;
@@ -311,39 +318,64 @@ hr {
     }
 
     .Div1 {
-        top: 37% ;
-        left: 7% ;
+        top: 37%;
+        left: 7%;
         width: 21rem;
         height: 7.6rem;
         border-radius: 50%;
         border: 3px solid #FFFFFF;
-        
+
     }
 
     #para1 {
         top: 4%;
         left: 75%;
         font-size: 60px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        top: 250px;
     }
 
     #para2 {
         top: 30%;
-        left: 77% ;
+        left: 77%;
         font-size: 60px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        top: 380px;
     }
 
     #para3 {
         top: -11%;
-        left: 11% ;
+        left: 11%;
         font-size: 60px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        top: 380px;
+
     }
 
     #para4 {
         top: 7%;
         left: 11%;
         font-size: 60px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        top: 250px;
     }
-    
+
     .circle {
         padding: 1px;
         font-size: 7px;
@@ -352,47 +384,48 @@ hr {
     }
 
     .circle.circle1 {
-        top: 31% ;
+        top: 31%;
         left: 57%;
         height: 60px;
-        width:60px;
+        width: 60px;
     }
 
     .circle.circle2 {
-        top: 48% ;
+        top: 48%;
         left: 60%;
         height: 60px;
-        width:60px;
+        width: 60px;
     }
 
     .circle.circle3 {
         top: 49% !important;
         left: 24%;
         height: 60px;
-        width:60px;
+        width: 60px;
     }
 
     .circle.circle4 {
         top: 36% !important;
         left: 18%;
         height: 60px;
-        width:60px;
+        width: 60px;
     }
+
     @keyframes move1 {
         0% {
             transform: rotate(-36.41deg) translate(20px, -20px);
         }
-    
+
         100% {
             transform: rotate(-46.41deg) translate(0, 0);
         }
     }
-    
+
     @keyframes move2 {
         0% {
             transform: rotate(30deg) translate(20px, -20px);
         }
-    
+
         100% {
             transform: rotate(30deg) translate(0px, 0px);
         }
