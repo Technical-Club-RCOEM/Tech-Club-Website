@@ -361,3 +361,40 @@ button:focus {
 .support a:hover {
   transform: scale(1.1);
 }
+
+.nxt {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  outline: none;
+  padding: 10px 40px;
+  color: #fff;
+  border: none;
+  background: #8A2387;
+  background: linear-gradient(60deg, #F27121, #E94057, #8A2387);
+  text-transform: uppercase;
+  font-size: medium;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nxt:active {
+  transform: scale(.8);
+}
+
+.text {
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 622px) {
+  .nxt {
+    display: none;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
